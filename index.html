@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customer Support</title>
+  <style>
+    :root {
+      --primary-color: #0067b8;
+      --bg-color: #ffffff;
+      --section-bg: #f3f2f1;
+      --text-color: #1b1b1b;
+      --card-hover: #e6f0fa;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      scroll-behavior: smooth;
+    }
+
+    .banner {
+      background: var(--section-bg);
+      color: var(--primary-color);
+      padding: 12px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .banner .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .banner img {
+      height: 36px;
+    }
+
+    .banner button {
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    header {
+      background: var(--primary-color);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: var(--section-bg);
+      margin-bottom: 10px;
+    }
+
+    .search-box {
+      margin-top: 20px;
+    }
+
+    /* New call button style inside header */
+    .search-box a {
+      display: inline-block;
+      background: var(--section-bg);
+      color: var(--primary-color);
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: background-color 0.3s ease;
+    }
+    .search-box a:hover {
+      background: #71baf1;
+    }
+
+    .grid-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      background: var(--bg-color);
+    }
+
+    .support-card {
+      background: var(--section-bg);
+      padding: 30px 20px;
+      text-align: center;
+      border-radius: 10px;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+
+    .support-card:hover {
+      background: var(--card-hover);
+      transform: translateY(-5px);
+    }
+
+    .support-card img {
+      width: 50px;
+      margin-bottom: 15px;
+    }
+
+    .support-card h3 {
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    .extra-section {
+      background: var(--section-bg);
+      padding: 50px 20px;
+    }
+
+    .extra-section h2 {
+      text-align: center;
+      color: var(--primary-color);
+      margin-bottom: 30px;
+    }
+
+    .extra-content {
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .contact-info {
+      background: var(--bg-color);
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .contact-info h2 {
+      color: var(--primary-color);
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      font-size: 1.1em;
+      margin: 8px 0;
+    }
+
+    .call-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 12px 20px;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      display: none;
+      z-index: 1000;
+      transition: background-color 0.3s ease;
+    }
+
+    .call-button:hover {
+      background-color: #005a9e;
+    }
+
+    footer {
+      background: #e1e1e1;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Banner -->
+  <div class="banner">
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Logo" />
+      <span>Microsoft Support </span>
+    </div>
+    <a href="tel:18333568291"><button>Call Now</button></a>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <h1>Microsoft Customer Support</h1>
+    <p>Need help? Click the button below or choose a topic to get started.</p>
+    <div class="search-box">
+      <a href="tel:18333568291">📞 Call Now</a>
+    </div>
+  </header>
+<!-- Additional Content Section -->
+<section class="extra-section">
+    <h2>Customer Service Tips & FAQs</h2>
+    <div class="extra-content">
+      <p>Need quick assistance? Our Live agent is available 24/7 to guide you through the most common problems, whether it’s resetting your password or checking order status. You can also schedule a callback for personalized help.</p>
+      <div class="search-box" style="align-items: center;text-align: center;">
+        <a href="tel:18333568291" style="text-decoration: none; color:white;background-color: #005a9e; text-align: center;">Call: 1 (833) 356-8291</a>
+      </div>
+    </div>
+  </section>
+  <!-- Main Grid Content -->
+  <section class="grid-section">
+    <div class="support-card"><a href="tel:18333568291" style="text-decoration: none;color: black;">
+      <img src="https://img.icons8.com/ios-filled/50/000000/user.png" alt="Account" />
+      <h3>Microsoft Account</h3>
+      <p>Login issues, security, passwords and account settings.</p></a>
+    </div>
+    <div class="support-card"><a href="tel:18333568291" style="text-decoration: none;color: black;">
+      <img src="https://img.icons8.com/ios-filled/50/laptop.png" alt="Devices" />
+      <h3>Devices</h3>
+      <p>Fix hardware issues, warranty and product updates.</p></a>
+    </div>
+    <div class="support-card"><a href="tel:18333568291" style="text-decoration: none;color: black;">
+      <img src="https://img.icons8.com/ios-filled/50/money.png" alt="Billing" />
+      <h3>Billing</h3>
+      <p>Payment problems, subscriptions and refunds.</p></a>
+    </div>
+    <div class="support-card"><a href="tel:18333568291" style="text-decoration: none;color: black;">
+      <img src="https://img.icons8.com/ios-filled/50/cloud.png" alt="Cloud" />
+      <h3>Microsoft 365</h3>
+      <p>Issues with Office apps, OneDrive and cloud storage.</p></a>
+    </div>
+    <div class="support-card"><a href="tel:18333568291" style="text-decoration: none;color: black;">
+      <img src="https://img.icons8.com/ios-filled/50/chat.png" alt="Support" />
+      <h3>Contact Support</h3>
+      <p>Talk to a virtual agent or request a call back from support.</p></a>
+    </div>
+    <div class="support-card"><a href="tel:18333568291" style="text-decoration: none;color: black;">
+      <img src="https://img.icons8.com/ios-filled/50/windows8.png" alt="Windows" />
+      <h3>Windows Help</h3>
+      <p>Troubleshoot Windows issues and find tips and tricks.</p></a>
+    </div>
+  </section>
+
+  
+
+  <!-- Contact Information Section -->
+  <section class="contact-info">
+    <h2>Contact Information</h2>
+    <p>Customer Service:<a href="tel:18333568291" style="text-decoration: none;"> 1-833-356-8291</a></p>
+    
+    <p>Live Support: Available 24/7</p>
+    <p>Working Hours: Monday to Friday, 9 AM - 6 PM</p>
+    <p>Address: 1234 Support Lane, Tech City, USA</p>
+  </section>
+
+  <!-- Call Button -->
+  <a href="tel:18333568291" class="call-button" id="fixedCallButton">📞 Call Now</a>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Microsoft. All rights reserved.
+  </footer>
+
+  <!-- JS for scroll toggle -->
+  <script>
+    const callBtn = document.getElementById("fixedCallButton");
+    const header = document.querySelector("header");
+
+    window.addEventListener("scroll", () => {
+      const triggerHeight = header.offsetHeight;
+      callBtn.style.display = window.scrollY > triggerHeight ? "block" : "none";
+});
+</script>
+
+</body> </html>
